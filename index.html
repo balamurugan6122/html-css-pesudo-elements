@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pesudo elements */
+        /* pesudo elements using '::' */
+        h1 {
+            text-align: center;
+        }
+        h1::after {
+            content: "//"; /*before selection */
+            color: blue;
+        }
+        h1::selection {
+            color: brown; /*after selection */
+        }
+        p::after {
+            content: "**";
+            color: orangered;
+        }
+        p::selection {
+            color: yellow;
+        }
+        h3 {
+            border: solid black;
+            border-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            display: inline-block; /* inline-block not start with new line and not take height and width but we able to give height and width */
+
+        }
+        h4 {
+            border: solid black;
+            display: block; /* start with new line and default it take height and width */
+        }
+        i {
+            border: solid black;
+            display: inline; /* inline not start with new line and not take height and width */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h1>CSS</h1>
+    <p>The HTML stands for HyperText Markup Language or HTML is the standard markup language for documents designed to be <br>
+    displayed in a web browser.  It defines the meaning and structure of web content.
+    </p>
+    <p>CSS stands for Cascading Style Sheets, css describes how HTML elements are to be displayed on screen,<br>
+    paper, or in other media.  Css saves lot of work.  It can contorl the layout of multiple web pages all at once<br>
+    external stylesheets are stored in css files. 
+    </p>
+    <h3>HTML</h2>
+    <h3>CSS</h2>
+    <h4>HTML is a Markup Language</h4>
+    <i>CSS is a Sheet Style Language</i>
+</body>
+</html>
